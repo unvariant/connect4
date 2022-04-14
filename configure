@@ -1,0 +1,11 @@
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+	echo "linux detected"
+	cp arch/linux.asm arch/arch.asm
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+        echo "unsupported operating system"
+	#echo "macos detected"
+	#cp arch/macos.asm arch/arch.asm
+else
+	echo "unsupported operating system"
+fi
+
